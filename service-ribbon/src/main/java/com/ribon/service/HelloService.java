@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class HelloService {
     @Autowired
-    RestTemplate restTemplate;//
+    RestTemplate restTemplate;//速度
 
     public String hiService(String name) {
         return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class);
